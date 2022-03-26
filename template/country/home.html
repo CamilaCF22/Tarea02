@@ -1,0 +1,82 @@
+{% extends 'layout.html' %}
+{% block title %}ARGENTINA, ¿QUÉ ESPERAS?{% endblock %}
+{% block contents %}
+
+<div class="navbar">
+  <a class="active" href="#">Home</a>
+  <a href="#">Argentina</a>
+  <a href="#">Things to do</a>
+  <a href="#">Where to go</a>
+  <a href="#">Planning your trip</a>
+  <a href="#">More</a>
+</div>
+
+<div class="container">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="/landing-page-pais-template/imagenes/argentina1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="/landing-page-pais-template/imagenes/argentina2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="/landing-page-pais-template/imagenes/argentina3.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="/landing-page-pais-template/imagenes/argentina4.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="/landing-page-pais-template/imagenes/argentina5.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="/landing-page-pais-template/imagenes/argentina6.jpg" style="width:100%">
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="/landing-page-pais-template/imagenes/argentina1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Buenos Aires City">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/landing-page-pais-template/imagenes/argentina2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bay">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/landing-page-pais-template/imagenes/argentina3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Iguazu Falls">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/landing-page-pais-template/imagenes/argentina4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Countless Jujuy">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/landing-page-pais-template/imagenes/argentina5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Perito Moreno Glacier">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/landing-page-pais-template/imagenes/argentina6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Mount Fitz Roy">
+      </div>
+    </div>
+  </div>
+<br>
+  <h1>DATOS CURIOSOS Y ESTADÍSTICAS SOBRE ARGENTINA</h1>
+<br>
+<p>1. Argentina es el octavo pais más grande del mundo<i class="fa-solid fa-8"></i></p>
+<p>2. Argentina es uno de los países con mayor reserva de agua potable<i class="fa-solid fa-hand-holding-droplet"></i></p>
+<p>3. La carne vacuna argentina es reconocida a nivel mundial<i class="fa-solid fa-steak"></i></p>
+
+
+{% endblock %}
