@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{% block title %}Messages home{% endblock %}
+{% block contents %}
+<h1>Messages home</h1>
+<br>
+<a href="{{ url_for('country.home') }}">Go to home page</a>
+{% endif %}
+<p>Review all the Messages</p>
+<br>
+<a href="{{ url_for('countrymessages.create') }}">Contáctanos</a>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nombre</th>
+            <th>apellido</th>
+            <th>correo</th>
+            <th>mensaje</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.nombre }}</td>
+            <td>{{ item.apellido }}</td>
+            <td>{{ item.correo }}</td>
+            <td>{{ item.mensaje }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
