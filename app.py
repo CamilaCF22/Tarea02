@@ -8,4 +8,6 @@ app.config.from_object("config.BaseConfig")
 
 SQLAlchemy(app)
 
-# register blueprints
+app.register_blueprint(country)
+app.register_blueprint(countrymessages)
+
