@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block title %}Contáctanos{% endblock %}
+{% block contents %}
+<h1>Contáctanos</h1>
+<br>
+<p>please contáctanos:</p>
+<br>
+<form action="{{ url_for('country.create') }}" method="post">
+    {{ form.hidden_tag() }}
+    {{ form.orderId.label }}
+    {{ form.orderId }}
+    {{ form.description.label }}
+    {{ form.description }}
+    {{ form.quantity.label }}
+    {{ form.quantity }}
+    {{ form.unitCost.label }}
+    {{ form.unitCost }}
+    {{ form.submit }}
+</form>
+
+{% endblock %}
